@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .flex-container{
+            /* width: 100%; */
+            display: flex;
+            gap: 1rem;
+            /* box-sizing: border-box; */
+            justify-content: center;
+            
+        }
+        .flex-container>div{
+            width: 30%;
+            /* background: crimson; */
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .flex-container>div h1{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .div1{
+            background: crimson;
+            order: 1;
+        }
+        .div2{
+            background: cadetblue;
+        }
+        .div3{
+            background: blueviolet;
+        }
+        @media screen and (max-width:425px ) {
+            .flex-container{
+                /* width: 100%; */
+                padding: 10px;
+                box-sizing: border-box;
+                flex-direction: column-reverse;
+            }
+            .flex-container>div{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .div1{
+            background: crimson;
+            order: 2;
+        }
+        .div2{
+            background: cadetblue;
+            order: 3;
+        }
+        .div3{
+            background: blueviolet;
+            order: 1;
+        }
+        }
+        @media screen and (max-width:320px ) {
+            .flex-container{
+                /* width: 100%; */
+                padding: 10px;
+                box-sizing: border-box;
+                flex-direction: column;
+            }
+            .flex-container>div{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .div1{
+            background: crimson;
+            order: 1;
+        }
+        .div2{
+            background: cadetblue;
+            order: 2;
+        }
+        .div3{
+            background: blueviolet;
+            order: 3;
+        }
+         }
+         @media screen and (min-width:320px ) and (max-width:375px ){
+            body{
+                background: yellow;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="div1"><h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis suscipit earum accusantium, quis consequuntur veniam.</p>
+        </div>
+        <div class="div2"><h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic dolorem laudantium, autem quidem ex.</p>
+        </div>
+        <div class="div3"><h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error expedita, impedit quas est veritatis eos?</p>
+    </div>
+    </div>
+</body>
+</html>

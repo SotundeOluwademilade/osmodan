@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: #b91646;
+    background-image: url(./osmodan.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* bac */
+    width: 100%;
+    height: fit-content;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    /* text-underline-offset: unset; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.call{
+    color: 5px solid black;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    
+}
+header>img{
+    width: 10%;
+    height:10vh ;
+}
+aside{
+    width: fit-content;
+    /* border-radius: 15px; */
+    box-sizing: border-box;
+    text-decoration: wavy;
+    margin: 0;
+    padding: 10px;
+    /* display: flex; */
+    background-color: #105652;
+}
+aside>ul{
+    cursor: pointer;
+}
+aside>ul:hover{
+    color: #fff;
+}
+footer{
+    width: 100%;
+    background-color: #b91646;
+    height: 7.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+}
+a:hover{
+    color: deeppink;
+}
+i{
+    cursor: pointer;
+}
+
+article>div>img{
+    width: 250px;
+    height: 250px;
+}
+main{
+    display: flex;
+}
+article>div{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+.download{
+    font-size: 20px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer>a:hover{
+    color: blue;
+}
